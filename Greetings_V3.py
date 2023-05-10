@@ -3,30 +3,33 @@
 
 #Greetings function
 def Yes_no(Rules):
-    Rules = ""
-    while Rules != "x":
+    Rules_Explained = ""
+    while Rules_Explained != "x":
         # ask user if they have played the game before
         Rules = input("have you played this game before?: ").lower()
 
         # If 'yes' program continues
         if Rules == "yes" or Rules == "y":
-            print("continue")
+            print("program continues")
+            return True
 
         # if they say no explain rules
-        if Rules == "no" or Rules == "y":
+        if Rules == "no" or Rules == "n":
+
 
             # greetings and explaining how it works
-            print("rules")
+            print(rules_Explained())
+
 
         # other whill print "please answer 'yes' and 'no'
         else:
-            print("please enter 'yes or 'no")
+            print("please enter 'yes' or 'no'")
 
 
 
 
 #rules function
-def rules():
+def rules_Explained():
     print(
         "Welcome to my Māori number quiz. Here you will learn the maori numbers from 1-10" "it will be not to difficult")
     print()
@@ -36,3 +39,4 @@ def rules():
     print("answer you will not gain a point ")
 
 #Main routine
+played_before=Yes_no("have you played")
