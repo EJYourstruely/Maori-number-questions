@@ -1,3 +1,4 @@
+"""add formatters to make it look better"""
 
 # Greetings function
 def yes_no(Rules):
@@ -23,13 +24,11 @@ def yes_no(Rules):
 
 # rules function
 def rules_Explained():
-    print(
-        "Welcome to my Māori number quiz. Here you will learn the maori numbers from 1-10" "it will be not to difficult")
     print()
-    # explain how the rules work and how to get points
-    print("To play the Māori Quiz you need to read what the question they asked was and write the correct answer")
-    print("if it is the correct answer you will gain 1 point and move up however if you dont choose the write ")
-    print("answer you will not gain a point ")
+    print(formatter("*",
+        "Welcome to my Māori number quiz. Here you will learn the maori numbers from 1-10" 
+        " it will be not to difficult""To play the Māori Quiz you need to read the questions and "
+        "answer correctly. if you do you gain 1 point"))
 
 
 #Questions Function
@@ -41,8 +40,7 @@ def Questions():
 
     # question_1
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_1 = input("what is Tahi in english? ").lower()
     if quest_1 == "1" or quest_1 == "one":
         print(f"you got it right it is {quest_1} ")
@@ -54,8 +52,7 @@ def Questions():
 
     # question_2
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_2 = input("what is Rua in english? ").lower()
     if quest_2 == "2" or quest_2 == "two":
         print(f"you got it right it is {quest_2} ")
@@ -67,8 +64,7 @@ def Questions():
 
     # question_3
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_3 = input("what is Rima in english? ").lower()
     if quest_3 == "five" or quest_3 == "5":
         print(f"you got it right it is {quest_3} ")
@@ -80,8 +76,7 @@ def Questions():
 
     # question_4
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_4 = input("what is ono in english? ").lower()
     if quest_4 == "6" or quest_4 == "six":
         print(f"you got it right it is {quest_4} ")
@@ -93,8 +88,7 @@ def Questions():
 
     # question_5
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_ = input("what does Rima + Wha equal in english? ").lower()
     if quest_ == "9" or quest_ == "nine":
         print(f"you got it right it is {quest_} ")
@@ -106,8 +100,7 @@ def Questions():
 
     # question_6
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_6 = input("what is 10 in Maori? ").lower()
     if quest_6 == "tekau":
         print(f"you got it right it is {quest_6} ")
@@ -120,8 +113,7 @@ def Questions():
 
     # question_7
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$", f"Round {Rounds}"))
     quest_7 = input("what is the first 3 numbers in maori(in order with a space in between them)? ").lower()
     if quest_7 == "tahi rua toru":
         print(f"you got it right it is {quest_7} ")
@@ -133,8 +125,7 @@ def Questions():
 
     # question_8
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_8 = input("what does 5-3 equal in Maori? ").lower()
     if quest_8 == "rua":
         print(f"you got it right it is {quest_8} ")
@@ -146,8 +137,7 @@ def Questions():
 
     # question_9
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_9 = input("what is iwa in english? ").lower()
     if quest_9 == "9" or quest_9 == "nine":
         print(f"you got it right it is {quest_9} ")
@@ -159,8 +149,7 @@ def Questions():
 
     # question_10
     Rounds += 1
-    print()
-    print(f"round {Rounds}")
+    print(formatter("$",f"Round {Rounds}"))
     quest_10 = input("what does 10-2+3-8 equal in Maori? ").lower()
     if quest_10 == "toru":
         print(f"you got it right it is {quest_10} ")
