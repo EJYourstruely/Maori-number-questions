@@ -28,7 +28,6 @@ def Questions():
     if quest_2 == "2" or quest_2 == "two":
         print(f"you got it right it is {quest_2} ")
         Points += 1
-        Rounds += 1
         print(f"you have {Points} Points")
     else:
         print("you suck thats wrong")
@@ -42,7 +41,6 @@ def Questions():
     if quest_3 == "five" or quest_3 == "5":
         print(f"you got it right it is {quest_3} ")
         Points += 1
-        Rounds += 1
         print(f"you have {Points} Points")
     else:
         print("you suck thats wrong")
@@ -56,7 +54,6 @@ def Questions():
     if quest_4 == "6" or quest_4 == "six":
         print(f"you got it right it is {quest_4} ")
         Points += 1
-        Rounds += 1
         print(f"you have {Points} Points")
     else:
         print("you suck thats wrong")
@@ -83,7 +80,6 @@ def Questions():
     if quest_6 == "Tekau":
         print(f"you got it right it is {quest_6} ")
         Points += 1
-        Rounds += 1
         print(f"you have {Points} Points")
     else:
         print("you suck thats wrong")

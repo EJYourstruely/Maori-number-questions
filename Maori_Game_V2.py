@@ -1,10 +1,8 @@
-"""Make industry standard"""
-
 
 # Greetings function
-def yes_no(rules):
-    rules_Explained = ""
-    while rules_Explained != "x":
+def yes_no(Rules):
+    Rules_Explained = ""
+    while Rules_Explained != "x":
         # ask user if they have played the game before
         Rules = input("have you played this game before?: ").lower()
 
@@ -16,7 +14,8 @@ def yes_no(rules):
         if Rules == "no" or Rules == "n":
 
             # greetings and explaining how it works
-            print(rules_Explained)
+            print(rules_Explained())
+
 
         # other whill print "please answer 'yes' and 'no'
         else:
@@ -211,7 +210,7 @@ def Accuracy():
         print("You were amazing")
     else:
         print(f"You were close you needed {perfectscore} more points to get a perfect score")
-        print(f"{Accuracy}%")
+        print(f"You got {Accuracy}%")
 
 # Main routine
 played_before = yes_no("have you played")

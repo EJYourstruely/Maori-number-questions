@@ -26,7 +26,6 @@ quest_2 = input("what is Rua in english? ").lower()
 if quest_2 == "2" or quest_2 == "two":
     print(f"you got it right it is {quest_2} ")
     Points += 1
-    Rounds += 1
     print(f"you have {Points} Points")
 else:
     print("you suck thats wrong")
@@ -40,7 +39,6 @@ quest_3 = input("what is Rima in english? ").lower()
 if quest_3 == "five" or quest_3 == "5":
     print(f"you got it right it is {quest_3} ")
     Points += 1
-    Rounds += 1
     print(f"you have {Points} Points")
 else:
     print("you suck thats wrong")
@@ -55,7 +53,6 @@ quest_4 = input("what is ono in english? ").lower()
 if quest_4 == "6" or quest_4 == "six":
     print(f"you got it right it is {quest_4} ")
     Points += 1
-    Rounds += 1
     print(f"you have {Points} Points")
 else:
     print("you suck thats wrong")
