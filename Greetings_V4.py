@@ -2,7 +2,7 @@
 
 
 #Greetings function
-def Yes_no(Rules):
+def yes_no(Rules):
     Rules_Explained = ""
     while Rules_Explained != "x":
         # ask user if they have played the game before
@@ -10,16 +10,14 @@ def Yes_no(Rules):
 
         # If 'yes' program continues
         if Rules == "yes" or Rules == "y":
-            print("program continues")
             return True
 
         # if they say no explain rules
         if Rules == "no" or Rules == "n":
 
-
             # greetings and explaining how it works
             print(rules_Explained())
-
+            return False
 
         # other whill print "please answer 'yes' and 'no'
         else:
@@ -39,4 +37,4 @@ def rules_Explained():
     print("answer you will not gain a point ")
 
 #Main routine
-played_before=Yes_no("have you played")
+played_before=yes_no("have you played")
