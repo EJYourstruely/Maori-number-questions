@@ -29,6 +29,7 @@ def rules_Explained():
         "Welcome to my Māori number quiz. Here you will learn the maori numbers from 1-10" 
         " it will be not to difficult""To play the Māori Quiz you need to read the questions and "
         "answer correctly. if you do you gain 1 point"))
+    return ""
 
 
 #Questions Function
@@ -40,7 +41,7 @@ def Questions():
 
     # question_1
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_1 = input("what is Tahi in english? ").lower()
     if quest_1 == "1" or quest_1 == "one":
         print(f"you got it right it is {quest_1} ")
@@ -51,8 +52,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_2
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_2 = input("what is Rua in english? ").lower()
     if quest_2 == "2" or quest_2 == "two":
         print(f"you got it right it is {quest_2} ")
@@ -63,8 +65,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_3
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_3 = input("what is Rima in english? ").lower()
     if quest_3 == "five" or quest_3 == "5":
         print(f"you got it right it is {quest_3} ")
@@ -75,8 +78,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_4
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_4 = input("what is ono in english? ").lower()
     if quest_4 == "6" or quest_4 == "six":
         print(f"you got it right it is {quest_4} ")
@@ -87,8 +91,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_5
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_ = input("what does Rima + Wha equal in english? ").lower()
     if quest_ == "9" or quest_ == "nine":
         print(f"you got it right it is {quest_} ")
@@ -99,21 +104,22 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_6
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_6 = input("what is 10 in Maori? ").lower()
     if quest_6 == "tekau":
         print(f"you got it right it is {quest_6} ")
         Points += 1
-        Rounds += 1
         print(f"you have {Points} Points")
     else:
         print("you suck that's wrong")
         print(f"you have {Points} Points")
 
     # question_7
+    print()
     Rounds += 1
-    print(formatter("$", f"Round {Rounds}"))
+    print(formatter("🏁", f"Round {Rounds}"))
     quest_7 = input("what is the first 3 numbers in maori(in order with a space in between them)? ").lower()
     if quest_7 == "tahi rua toru":
         print(f"you got it right it is {quest_7} ")
@@ -124,8 +130,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_8
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_8 = input("what does 5-3 equal in Maori? ").lower()
     if quest_8 == "rua":
         print(f"you got it right it is {quest_8} ")
@@ -136,8 +143,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_9
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_9 = input("what is iwa in english? ").lower()
     if quest_9 == "9" or quest_9 == "nine":
         print(f"you got it right it is {quest_9} ")
@@ -148,8 +156,9 @@ def Questions():
         print(f"you have {Points} Points")
 
     # question_10
+    print()
     Rounds += 1
-    print(formatter("$",f"Round {Rounds}"))
+    print(formatter("🏁",f"Round {Rounds}"))
     quest_10 = input("what does 10-2+3-8 equal in Maori? ").lower()
     if quest_10 == "toru":
         print(f"you got it right it is {quest_10} ")
@@ -165,29 +174,29 @@ def Questions():
 def Summary():
     # Summary of quiz
     # If you get no points
-    if PointsGained == "0":
-        print(f"You got {PointsGained}")
+    if PointsGained == 0:
+        print(f"You got {PointsGained} point")
         print("you did your best but not good enough")
 
     # If you get between 1-3 Points
     if PointsGained >= 1 and PointsGained <= 3:
-        print(f"You got {PointsGained}")
+        print(f"You got {PointsGained} point")
         print("you are not good at this")
 
     # if you get between 4-6 points
     if PointsGained >= 4 and PointsGained <= 6:
-        print(f"You got {PointsGained}")
+        print(f"You got {PointsGained} point")
         print("not bad")
 
     # if you get 7-9 pointd
     if PointsGained >= 7 and PointsGained <= 9:
-        print(f"You got {PointsGained}")
+        print(f"You got {PointsGained} point")
         print("your pretty good")
 
     # if you get 10 points
     if PointsGained == 10:
-        print(f"You got {PointsGained}")
-        print("Greatest of all time")
+        print(f"You got {PointsGained} point")
+        print("Greatest of all time🐐🐐🐐")
 
 #Accuracy
 def Accuracy():
@@ -199,17 +208,17 @@ def Accuracy():
         print("You were amazing")
     else:
         print(f"You were close you needed {perfectscore} more points to get a perfect score")
-        print(f"You got {Accuracy}%")
+        print(f"You got {Accuracy}% right")
 
 
-def formatter(symbol,text):
-    sides = symbol * 1
-    formatted_text = f"{sides}{text}{sides}"
+def formatter(symbol, text):
+    sides = symbol * 3
+    formatted_text = f"{sides} {text} {sides}"
     top_bottom = symbol * len(formatted_text)
-    return f"{top_bottom}\n{text}\n{top_bottom}"
+    return f"{top_bottom}\n{formatted_text}\n{top_bottom}"
 
 # Main routine
-print(formatter("%", "welcome to the maori quiz"))
+print(formatter("🥝", "welcome to the maori quiz"))
 played_before = yes_no("have you played")
 PointsGained = Questions()
 print()

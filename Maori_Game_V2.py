@@ -30,6 +30,7 @@ def rules_Explained():
     print("To play the Māori Quiz you need to read what the question they asked was and write the correct answer")
     print("if it is the correct answer you will gain 1 point and move up however if you dont choose the write ")
     print("answer you will not gain a point ")
+    return ""
 
 
 #Questions Function
